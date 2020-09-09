@@ -1,0 +1,27 @@
+@charset "utf-8";
+.header{
+	height: 100vh;
+	width: 100%;
+}
+#myintro{
+	float:right
+}
+#icon a{color: black;
+	font-size: 200%;
+}
+#footer {
+	align-content: center;
+	
+}
+#trai{
+	float: left;
+	width: 50%;
+	
+}
+#trai p{
+	padding-left: 20px
+}
+#phai{
+	float: right;
+	width: 50%;
+}
