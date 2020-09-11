@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     }
+/* Responsive */
+@media (max-width: 375px){
+    }
 /* Menu */
 #menu img {
     float: left;
@@ -42,6 +45,10 @@ body {
     }
 hr {
     margin-left: 46%;
+    }
+h3 {
+    color: #EA5455;
+    text-align: center;
     }
 /* Home */
 #home {
@@ -103,6 +110,15 @@ hr {
     }
     
 /* Melody */
+h4 {
+    color: #EA5455;
+    text-align: center;
+    }
+.song {
+    color: white;
+    flex: 1 0;
+    text-align: center;
+    }
 /* Contact me */
 #contactme {
     text-align: center;
