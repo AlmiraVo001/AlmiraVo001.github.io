@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+    <div id="outer">
+        <section>
+            <div id="header">
+                <div id="wrapper-header">
+                    <div class="menu uno">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Posts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                     <div id="logo">
+                        <img src="image/Logo Rin.png">
+                    </div>
+                    <div class="menu dos">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Healthy</a></li>
+                                <li><a href="#">My Insta</a></li>
+                                <li><a href="#">Follow me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+      </section>
+        <section id="intro">
+              <img src="image/bg.jpg">
+              <div id="text">
+                  <p>LOVE YOURSELF</p>
+                  <p>SAVE YOUR WORLD</p>
+            </div>
+        </section>
+        <section id="aboutus">
+            <div id="title1">
+                <p style="font-size: 40px">About Us</p>
+                <p><i>We respect your lifestyle and at least you know that someone love and support you a lot</i></p>
+            </div>
+                <div id="function1">
+                    <img src="image/abus.jpg" alt="">
+                    <img src="image/abus3.jpg" alt="">
+                    <img src="image/abus2.jpg" alt="">
+                </div>
+                 <div id="function2">
+                    <p>Love</p>
+                    <p>Sharing</p>
+                    <p>Healthy</p>
+                </div>
+        </section>
+        <section id="post">
+            <div id="title2" style="font-size: 40px">Latest Posts</div>
+            <div id="slide">
+                <div class="slide-post fade">
+                    <img src="image/sl1.jpg" alt="">
+                    <div class="title">Breakfast</div>
+                </div>
+                <div class="slide-post fade">
+                    <img src="image/sl2.jpg" alt="">
+                    <div class="title">Lunch</div>
+                </div>
+                <div class="slide-post fade">
+                    <img src="image/Sl3.jpg" alt="">
+                    <div class="title">Dinner</div>
+                </div>
+                <div>
+                    <div class="dot one"></div>
+                    <div class="dot two"></div>
+                    <div class="dot three"></div>
+                </div>
+            </div>
+        </section>
+        <section id="healthy">
+            <div id="title3" style="font-size: 40px">Healthy</div>
+                <div id="content1">
+                    <p id="special1">Dear my darling,</p>
+                    <p id="normal"><i>You can't just eat good food. You've got to talk about it too. And you've got to talk about it to somebody who understands that kind of food.</i></p>
+                    <p id="special2">Hopefully, we miss each other.</p>
+            </div>
+        </section>
+        <section id="insta">
+            <div id="title4" style="font-size: 40px">My Insta</div>
+            <div class="ins">
+                <img src="image/ins1.jpg" alt="">
+                <img src="image/Ins2.jpeg" alt="">
+                <img src="image/ins4.jpg" alt="">
+            </div>
+        </section>
+        <section id="footer"></section>
+    </div>
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide-post");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
